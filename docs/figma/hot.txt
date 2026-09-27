@@ -1,0 +1,127 @@
+const imgBell = "/assets/icons/bell.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgCaretLeft = "/assets/icons/back.svg";
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+
+type HeaderIconProps = {
+  className?: string;
+  prop1?: "bellOn2";
+};
+
+function HeaderIcon({ className, prop1 = "bellOn2" }: HeaderIconProps) {
+  return (
+    <div className={className || "content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative"} data-node-id="96:1944">
+      <div className="relative shrink-0 size-[24px]" data-node-id="96:1945" data-name="Bell">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBell} />
+      </div>
+    </div>
+  );
+}
+
+export default function ChoiseHot() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex flex-col gap-[96px] items-center justify-center px-[24px] relative size-full" data-node-id="139:1150" data-name="choise_hot">
+      <div className="content-stretch flex items-center justify-between px-[20px] py-[10px] relative shrink-0 w-full" data-node-id="139:1151" data-name="tit">
+        <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start not-italic relative shrink-0 text-[#1b1716] whitespace-nowrap" data-node-id="139:1152" data-name="txt">
+          <p className="font-['MaruBuri:SemiBold'] leading-[1.2] relative shrink-0 text-[32px] tracking-[-0.64px]" data-node-id="139:1153">
+            캐모마일
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] leading-[0] relative shrink-0 text-[14px] tracking-[-0.28px]" data-node-id="139:1154">
+            <span className="leading-[1.2]">나만의</span>
+            <span className="leading-[1.2]">{` `}</span>
+            <span className="leading-[1.2]">차 만들기</span>
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[85px] items-center relative shrink-0" data-node-id="139:1155" data-name="set_bottom">
+        <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="139:1156" data-name="tem">
+          <div className="bg-[#f0776c] content-stretch flex flex-col h-[50px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-[174px]" data-node-id="160:738" data-name="button">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I160:738;96:1862">
+              따뜻하게
+            </p>
+          </div>
+          <div className="border border-[#f0776c] border-solid content-stretch flex flex-col h-[50px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-[174px]" data-node-id="160:741" data-name="button">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I160:741;96:1858">
+              시원하게
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[6px] items-center relative shrink-0 w-[354px]" data-node-id="139:1161" data-name="water">
+          <div className="bg-[#f0776c] content-stretch flex flex-col h-[45px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-[114px]" data-node-id="160:751" data-name="button">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I160:751;96:1862">
+              정수기 온수
+            </p>
+          </div>
+          <div className="border border-[#f0776c] border-solid content-stretch flex flex-col h-[45px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-[114px]" data-node-id="160:754" data-name="button">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I160:754;96:1858">
+              끓인 물
+            </p>
+          </div>
+          <div className="border border-[#f0776c] border-solid content-stretch flex flex-col h-[45px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-[114px]" data-node-id="160:757" data-name="button">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I160:757;96:1858">
+              생수
+            </p>
+          </div>
+        </div>
+        <div className="bg-[#f0776c] content-stretch flex items-center overflow-clip relative rounded-[25px] shrink-0 w-[354px]" data-node-id="139:1168" data-name="time_bar">
+          <div className="bg-[#fff9f6] border border-[#28140e] border-solid content-stretch flex h-[70px] items-center overflow-clip pl-[12px] relative rounded-[25px] shrink-0 w-[112px]" data-node-id="139:1169" data-name="time_slide">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[1.2] not-italic relative shrink-0 text-[16px] text-black whitespace-nowrap" data-node-id="139:1170">
+              2분 30초
+            </p>
+          </div>
+        </div>
+        <p className="[text-underline-position:from-font] [word-break:break-word] decoration-from-font decoration-solid font-['NanumSquareRound:Regular'] leading-[normal] not-italic relative shrink-0 text-[#1b1716] text-[20px] underline whitespace-nowrap" data-node-id="139:1171">
+          나만의 차 마셔보기 →
+        </p>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#fff9f6] content-stretch flex flex-col items-start left-1/2 py-[10px] top-0 w-[402px]" data-node-id="139:1111" data-name="top_wrap">
+        <div className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-full" data-node-id="I139:1111;289:455" data-name="Status bar - iPhone">
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="I139:1111;289:456" data-name="Time">
+            <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="I139:1111;289:457" data-name="Frame">
+              <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="I139:1111;289:458" style={{ fontVariationSettings: '"wdth" 100' }}>
+                9:41
+              </p>
+            </div>
+          </div>
+          <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="I139:1111;289:459" data-name="Dynamic Island" />
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="I139:1111;289:460" data-name="Levels">
+            <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="I139:1111;289:461" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex h-[44px] items-center justify-between px-[20px] relative shrink-0 w-full" data-node-id="I139:1111;289:469" data-name="header">
+          <button className="content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" data-node-id="I139:1111;289:470" data-name="headerIcon">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I139:1111;289:470;14:772" data-name="CaretLeft">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCaretLeft} />
+            </div>
+          </button>
+          <div className="content-stretch flex items-center justify-center px-[10px] relative shrink-0" data-node-id="I139:1111;289:471" data-name="logo">
+            <p className="[word-break:break-word] font-['iceJaram:Regular'] leading-none not-italic relative shrink-0 text-[#1c1b1b] text-[32px] tracking-[0.32px] whitespace-nowrap" data-node-id="I139:1111;289:472">
+              T100
+            </p>
+          </div>
+          <HeaderIcon className="content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative shrink-0" />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bottom-0 content-stretch flex flex-col items-start left-1/2" data-node-id="139:1113" data-name="bottom_wrap">
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="I139:1113;77:457" data-name="Mobile_Browser_bottom">
+          <div className="h-[34px] relative shrink-0 w-full" data-node-id="I139:1113;77:458" data-name="bottom">
+            <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="I139:1113;77:459" data-name="Home Indicator">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: color/black: #1C1B1B.

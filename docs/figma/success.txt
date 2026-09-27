@@ -1,0 +1,157 @@
+const imgUserOff = "/assets/icons/user-off.svg";
+const imgHomeOn = "/assets/icons/home-on.svg";
+const imgCoffee = "/assets/icons/coffee-off.svg";
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+const imgBell = "/assets/icons/bell.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgCaretLeft = "/assets/icons/back.svg";
+const imgCamomileIce = "/assets/images/chamomile-ice.png";
+
+type UserProps = {
+  className?: string;
+  user?: "off";
+};
+
+function User({ className, user = "off" }: UserProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="160:1135">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUserOff} />
+    </div>
+  );
+}
+
+type HouseLineProps = {
+  className?: string;
+  home?: "on";
+};
+
+function HouseLine({ className, home = "on" }: HouseLineProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="77:637">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeOn} />
+    </div>
+  );
+}
+
+type BottomWrapProps = {
+  className?: string;
+  prop1?: "on";
+};
+
+function BottomWrap({ className, prop1 = "on" }: BottomWrapProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-center relative"} data-node-id="78:718">
+      <div className="bg-[#ffece3] content-stretch flex gap-[74px] items-center overflow-clip px-[28px] py-[10px] relative rounded-[25px] shadow-[0px_0px_6.7px_0px_rgba(77,70,68,0.06)] shrink-0" data-node-id="78:710" data-name="nav_bottom">
+        <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="289:603" data-name="Coffee">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCoffee} />
+        </div>
+        <HouseLine className="h-[36px] relative shrink-0 w-[50px]" />
+        <User className="h-[36px] relative shrink-0 w-[50px]" />
+      </div>
+      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="77:540" data-name="Mobile_Browser_bottom">
+        <div className="h-[34px] relative shrink-0 w-full" data-node-id="77:541" data-name="bottom">
+          <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="77:542" data-name="Home Indicator">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type HeaderIconProps = {
+  className?: string;
+  prop1?: "bellOn2";
+};
+
+function HeaderIcon({ className, prop1 = "bellOn2" }: HeaderIconProps) {
+  return (
+    <div className={className || "content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative"} data-node-id="96:1944">
+      <div className="relative shrink-0 size-[24px]" data-node-id="96:1945" data-name="Bell">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBell} />
+      </div>
+    </div>
+  );
+}
+
+type TopWrapProps = {
+  className?: string;
+  prop1?: "default";
+};
+
+function TopWrap({ className, prop1 = "default" }: TopWrapProps) {
+  return (
+    <div className={className || "bg-[#fff9f6] content-stretch flex flex-col items-start py-[10px] relative w-[402px]"} data-node-id="289:454">
+      <div className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-full" data-node-id="289:455" data-name="Status bar - iPhone">
+        <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="289:456" data-name="Time">
+          <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="289:457" data-name="Frame">
+            <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="289:458" style={{ fontVariationSettings: '"wdth" 100' }}>
+              9:41
+            </p>
+          </div>
+        </div>
+        <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="289:459" data-name="Dynamic Island" />
+        <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="289:460" data-name="Levels">
+          <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="289:461" data-name="Frame">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex h-[44px] items-center justify-between px-[20px] relative shrink-0 w-full" data-node-id="289:469" data-name="header">
+        <button className="content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" data-node-id="289:470" data-name="headerIcon">
+          <div className="relative shrink-0 size-[24px]" data-node-id="I289:470;14:772" data-name="CaretLeft">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCaretLeft} />
+          </div>
+        </button>
+        <div className="content-stretch flex items-center justify-center px-[10px] relative shrink-0" data-node-id="289:471" data-name="logo">
+          <p className="[word-break:break-word] font-['iceJaram:Regular'] leading-none not-italic relative shrink-0 text-[#1c1b1b] text-[32px] tracking-[0.32px] whitespace-nowrap" data-node-id="289:472">
+            T100
+          </p>
+        </div>
+        <HeaderIcon className="content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative shrink-0" />
+      </div>
+    </div>
+  );
+}
+
+export default function Success() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex flex-col items-center relative size-full" data-node-id="155:269" data-name="success">
+      <TopWrap className="bg-[#fff9f6] content-stretch flex flex-col items-start py-[10px] relative shrink-0 w-[402px]" />
+      <div className="content-stretch flex flex-[1_0_0] flex-col gap-[40px] items-center justify-center min-h-px overflow-clip px-[101px] py-[96px] relative w-full" data-node-id="155:271" data-name="Main">
+        <div className="content-stretch flex flex-col gap-[20px] items-center relative shrink-0" data-node-id="329:863">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-center leading-[normal] not-italic relative shrink-0 text-[#1b1716] text-center" data-node-id="158:308">
+            <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[24px] whitespace-nowrap" data-node-id="158:309">
+              오늘의 한 잔
+            </p>
+            <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[20px] whitespace-pre" data-node-id="158:310">
+              {`라이브러리에서 언제든 `}
+              <br aria-hidden />
+              다시 볼 수 있어요.
+            </p>
+          </div>
+          <div className="h-[247px] relative shadow-[0px_2px_7.7px_0px_rgba(40,20,14,0.12)] shrink-0 w-[106px]" data-node-id="158:298" data-name="camomile_ice">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[180.03%] left-[-118.69%] max-w-none top-[-57.44%] w-[337.25%]" src={imgCamomileIce} />
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#f0776c] content-stretch flex flex-col h-[50px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-[200px]" data-node-id="160:722" data-name="button">
+          <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I160:722;96:1862">
+            기록 보기
+          </p>
+        </div>
+      </div>
+      <BottomWrap className="content-stretch flex flex-col items-center relative shrink-0" />
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: color/black: #1C1B1B.

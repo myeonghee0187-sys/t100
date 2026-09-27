@@ -1,0 +1,59 @@
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+
+type BottomWrapProps = {
+  className?: string;
+  prop1?: "off";
+};
+
+function BottomWrap({ className, prop1 = "off" }: BottomWrapProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start relative"} data-node-id="78:719">
+      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="77:457" data-name="Mobile_Browser_bottom">
+        <div className="h-[34px] relative shrink-0 w-full" data-node-id="77:458" data-name="bottom">
+          <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="77:459" data-name="Home Indicator">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TopWrap({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative w-[402px]"} data-node-id="77:460" data-name="top_wrap">
+      <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="77:443" data-name="Time">
+        <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="77:444" data-name="Frame">
+          <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="77:445" style={{ fontVariationSettings: '"wdth" 100' }}>
+            9:41
+          </p>
+        </div>
+      </div>
+      <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="77:446" data-name="Dynamic Island" />
+      <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="77:447" data-name="Levels">
+        <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="77:448" data-name="Frame">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Splash() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex flex-col items-center relative size-full" data-node-id="78:853" data-name="splash">
+      <TopWrap className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-[402px]" />
+      <div className="h-[778px] relative shrink-0 w-[402px]" data-node-id="375:1068" data-name="T100 Splash 2.5s 1" />
+      <BottomWrap className="content-stretch flex flex-col items-start relative shrink-0" />
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.

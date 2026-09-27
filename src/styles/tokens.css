@@ -1,0 +1,27 @@
+:root {
+  --color-background: #fff9f6;
+  --color-primary: #f0776c;
+  --color-navigation: #ffece3;
+  --color-text-primary: #1b1716;
+  --color-brand: #1c1b1b;
+  --color-text-secondary: #4d4644;
+  --color-brown: #5a4139;
+  --color-deep-brown: #28140e;
+  --color-surface: #fffcfb;
+  --color-border: #e6dad5;
+  --color-link: #a34b43;
+  --color-muted: #8b7771;
+  --radius-button: 100px;
+  --radius-card: 24px;
+  --radius-field: 12px;
+  --shadow-nav: 0 0 6.7px #4d46440f;
+  --font-body: "NanumSquareRound", sans-serif;
+  --font-heading: "MaruBuri", serif;
+  --space-page: 24px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --app-width: 402px;
+  --duration-fast: 160ms;
+  --duration-page: 200ms;
+  --duration-sheet: 300ms;
+}

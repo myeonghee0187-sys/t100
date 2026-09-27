@@ -1,0 +1,129 @@
+.status-bar {
+  height: calc(62px + var(--safe-top));
+  padding: calc(2.333px + var(--safe-top)) 9px 0;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.status-bar > span,
+.status-bar > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.status-bar > span {
+  padding-right: 6px;
+  font:
+    600 17px/22px -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  color: #000;
+}
+.status-bar > i {
+  display: block;
+  width: 125px;
+  height: 37px;
+  border-radius: 100px;
+  background: #000;
+  flex-shrink: 0;
+}
+.status-bar > div {
+  padding-right: 1px;
+}
+.app-header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--app-width));
+  padding: 10px 0;
+  background: var(--color-background);
+}
+.app-header.transparent {
+  background: transparent;
+}
+.header-row {
+  height: 44px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-link {
+  min-width: 65px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-indicator {
+  height: calc(34px + var(--safe-bottom));
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: calc(8px + var(--safe-bottom));
+}
+.bottom-wrap {
+  position: fixed;
+  z-index: 25;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--app-width));
+}
+.bottom-nav {
+  height: 56px;
+  margin: 0 24px;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100px;
+  background: var(--color-navigation);
+  box-shadow: var(--shadow-nav);
+}
+.bottom-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  min-height: 44px;
+}
+.solo-indicator {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--app-width));
+  z-index: 25;
+}
+.status-only {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100%, var(--app-width));
+  z-index: 20;
+  background: var(--color-background);
+}
+
+.status-bar > span {
+  padding-right: 0;
+  text-indent: -6px;
+  min-width: 0;
+}
+.status-bar > div {
+  padding-right: 0;
+  min-width: 0;
+}
+.brand-link {
+  text-decoration: none;
+}
+.bottom-wrap {
+  background: var(--color-background);
+}
+.library-page .bottom-wrap,
+.timer-page .bottom-wrap {
+  background: transparent;
+}

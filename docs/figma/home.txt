@@ -1,0 +1,830 @@
+const imgBell = "/assets/icons/bell.svg";
+const imgUserOff = "/assets/icons/user-off.svg";
+const imgHomeOn = "/assets/icons/home-on.svg";
+const imgRecommend03 = "/assets/images/recommend-oolong.png";
+const imgRecommend02 = "/assets/images/recommend-black.png";
+const imgRecommend01 = "/assets/images/recommend-green.png";
+const imgImgBox = "/assets/images/white-tea.png";
+const imgImgBox1 = "/assets/images/peppermint.png";
+const imgImgBox2 = "/assets/images/chamomile.png";
+const imgImgBox3 = "/assets/images/rooibos.png";
+const imgImgBox4 = "/assets/images/hibiscus.png";
+const imgImgBox5 = "/assets/images/puer.png";
+const imgEllipse46 = "/assets/icons/taste-46.svg";
+const imgEllipse49 = "/assets/icons/taste-49.svg";
+const imgEllipse47 = "/assets/icons/taste-47.svg";
+const imgEllipse48 = "/assets/icons/taste-48.svg";
+const imgEllipse50 = "/assets/icons/taste-50.svg";
+const imgEllipse51 = "/assets/icons/taste-51.svg";
+const imgCoffee = "/assets/icons/coffee-off.svg";
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgCaretLeft = "/assets/icons/back.svg";
+
+type HeaderIconProps = {
+  className?: string;
+  prop1?: "bellOn2";
+};
+
+function HeaderIcon({ className, prop1 = "bellOn2" }: HeaderIconProps) {
+  return (
+    <div className={className || "content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative"} data-node-id="96:1944">
+      <div className="relative shrink-0 size-[24px]" data-node-id="96:1945" data-name="Bell">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBell} />
+      </div>
+    </div>
+  );
+}
+
+type UserProps = {
+  className?: string;
+  user?: "off";
+};
+
+function User({ className, user = "off" }: UserProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="160:1135">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUserOff} />
+    </div>
+  );
+}
+
+type HouseLineProps = {
+  className?: string;
+  home?: "on";
+};
+
+function HouseLine({ className, home = "on" }: HouseLineProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="77:637">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeOn} />
+    </div>
+  );
+}
+
+type ConRecommendProps = {
+  className?: string;
+  prop1?: "기본";
+};
+
+function ConRecommend({ className, prop1 = "기본" }: ConRecommendProps) {
+  return (
+    <div className={className || "h-[470px] relative w-[870px]"} data-node-id="139:1033">
+      <div className="absolute content-stretch flex flex-col gap-[243px] items-start left-[610px] overflow-clip p-[14px] rounded-[24px] top-[48px] w-[260px]" data-node-id="139:1010" data-name="recommend03">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+          <div className="absolute inset-0 overflow-hidden rounded-[24px]">
+            <img alt="" className="absolute h-[109.44%] left-[-9.46%] max-w-none top-[-0.07%] w-[109.48%]" src={imgRecommend03} />
+          </div>
+          <div className="absolute bg-gradient-to-b from-[55.319%] from-[rgba(40,20,14,0)] inset-0 rounded-[24px] to-[#28140e] via-[77.66%] via-[rgba(40,20,14,0.7)]" />
+        </div>
+        <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="139:1011" data-name="txt_info">
+          <div className="bg-[#f0776c] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="139:1012" data-name="keyword_txt">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#fff9f6] text-[12px] whitespace-nowrap" data-node-id="139:1013">
+              여유
+            </p>
+          </div>
+          <div className="bg-[#f0776c] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="139:1014" data-name="keyword_info">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#fff9f6] text-[12px] whitespace-nowrap" data-node-id="139:1015">
+              90℃ ‧ 3분
+            </p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex flex-col font-['NanumSquareRound:Bold'] gap-[4px] items-start justify-center not-italic relative shrink-0 text-[#fff9f6] w-full" data-node-id="139:1016" data-name="txt">
+          <div className="leading-[0] relative shrink-0 text-[24px] whitespace-nowrap" data-node-id="139:1017">
+            <p className="leading-[1.2] mb-0">황금빛이 천천히 번지는</p>
+            <p className="leading-[1.2]">느긋한 오후</p>
+          </div>
+          <p className="leading-[1.2] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="139:1018">
+            진하지 않게 즐기는 우롱차
+          </p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[319px] items-start left-[272px] overflow-clip p-[24px] rounded-[24px] top-0 w-[326px]" data-node-id="139:1001" data-name="recommend02">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+          <div className="absolute inset-0 overflow-hidden rounded-[24px]">
+            <img alt="" className="absolute h-[106.79%] left-[-2.68%] max-w-none top-[0.04%] w-[102.64%]" src={imgRecommend02} />
+          </div>
+          <div className="absolute bg-gradient-to-b from-[55.319%] from-[rgba(40,20,14,0)] inset-0 rounded-[24px] to-[#28140e] via-[77.66%] via-[rgba(40,20,14,0.7)]" />
+        </div>
+        <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="139:1005" data-name="txt_info">
+          <div className="bg-[#f0776c] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="139:1006" data-name="keyword_txt">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#fff9f6] text-[12px] whitespace-nowrap" data-node-id="139:1007">
+              피로
+            </p>
+          </div>
+          <div className="bg-[#f0776c] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="139:1008" data-name="keyword_info">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#fff9f6] text-[12px] whitespace-nowrap" data-node-id="139:1009">
+              95℃ ‧ 3분
+            </p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex flex-col font-['NanumSquareRound:Bold'] gap-[4px] items-start justify-center not-italic relative shrink-0 text-[#fff9f6] w-full" data-node-id="139:1002" data-name="txt">
+          <div className="leading-[0] relative shrink-0 text-[24px] whitespace-nowrap" data-node-id="139:1003">
+            <p className="leading-[1.2] mb-0">붉게 짙어지는 3분,</p>
+            <p className="leading-[1.2]">오후를 다시 여는 한 잔</p>
+          </div>
+          <p className="leading-[1.2] min-w-full relative shrink-0 text-[16px] w-[min-content]" data-node-id="139:1004">
+            진하게 우려도 좋은 홍차
+          </p>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[243px] items-start left-0 overflow-clip p-[14px] rounded-[24px] top-[48px] w-[260px]" data-node-id="139:1019" data-name="recommend01">
+        <div aria-hidden className="absolute inset-0 pointer-events-none rounded-[24px]">
+          <img alt="" className="absolute max-w-none object-bottom rounded-[24px] size-full" src={imgRecommend01} />
+          <div className="absolute bg-gradient-to-b from-[55.319%] from-[rgba(40,20,14,0)] inset-0 rounded-[24px] to-[#28140e] via-[77.66%] via-[rgba(40,20,14,0.7)]" />
+        </div>
+        <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="139:1020" data-name="txt_info">
+          <div className="bg-[#f0776c] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="139:1021" data-name="keyword_txt">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#fff9f6] text-[12px] whitespace-nowrap" data-node-id="139:1022">
+              집중
+            </p>
+          </div>
+          <div className="bg-[#f0776c] content-stretch flex items-center justify-center px-[12px] py-[4px] relative rounded-[15px] shrink-0" data-node-id="139:1023" data-name="keyword_info">
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#fff9f6] text-[12px] whitespace-nowrap" data-node-id="139:1024">
+              70℃ ‧ 2분
+            </p>
+          </div>
+        </div>
+        <div className="[word-break:break-word] content-stretch flex flex-col font-['NanumSquareRound:Bold'] gap-[4px] items-start justify-center not-italic relative shrink-0 text-[#fff9f6] w-full" data-node-id="139:1025" data-name="txt">
+          <div className="leading-[0] relative shrink-0 text-[24px] w-full" data-node-id="139:1026">
+            <p className="leading-[1.2] mb-0">연둣빛이 맑게 오르면</p>
+            <p className="leading-[1.2]">머리도 한 번 정리돼요</p>
+          </div>
+          <p className="leading-[1.2] relative shrink-0 text-[16px] w-full" data-node-id="139:1027">
+            짧게 우려야 쓰지 않은 녹차
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex flex-col items-center relative size-full" data-node-id="78:849" data-name="Home">
+      <div className="content-stretch flex flex-[1_0_0] flex-col items-center min-h-px pt-[130px] relative w-full" data-node-id="78:851" data-name="Main">
+        <div className="content-stretch flex flex-col gap-[64px] items-start pb-[24px] pt-[12px] px-[24px] relative shrink-0 w-[402px]" data-node-id="96:1433" data-name="wrap">
+          <div className="content-stretch flex flex-col gap-[20px] items-center pb-[36px] pt-[20px] px-[20px] relative shrink-0 w-full" data-node-id="96:1442" data-name="01">
+            <div className="content-stretch flex items-end justify-between px-[20px] py-[10px] relative shrink-0 w-full" data-node-id="96:1434" data-name="tit">
+              <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-start leading-[1.2] not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:1435" data-name="txt">
+                <p className="font-['MaruBuri:SemiBold'] relative shrink-0 text-[#1b1716] text-[32px] tracking-[-0.64px]" data-node-id="96:1437">
+                  오늘의 차
+                </p>
+                <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#5a4139] text-[14px]" data-node-id="96:1436">
+                  지친 하루엔
+                </p>
+              </div>
+            </div>
+            <ConRecommend className="h-[470px] relative shrink-0 w-[870px]" />
+          </div>
+          <div
+            className="content-stretch flex flex-col gap-[24px] items-start px-[20px] py-[36px] relative shrink-0 w-[354px]"
+            data-node-id="96:3083"
+            data-annotations="우려보기 버튼을 넣는 대신
+
+카드 자체를 클릭하면 다음으로 넘어갈 수 있다는 애니메이션을 주는 방법
+
+인터랙션 레퍼런스 찾아보기"
+            data-name="02"
+          >
+            <div className="content-stretch flex items-end justify-between px-[20px] py-[10px] relative shrink-0 w-full" data-node-id="96:3084" data-name="tit">
+              <div className="content-stretch flex flex-col items-start relative shrink-0" data-node-id="96:3085" data-name="txt">
+                <p className="[word-break:break-word] font-['MaruBuri:SemiBold'] leading-[1.2] not-italic relative shrink-0 text-[#1b1716] text-[32px] tracking-[-0.64px] whitespace-nowrap" data-node-id="96:3086">
+                  차 둘러보기
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-[314px]" data-node-id="96:3087" data-name="list">
+              <div className="bg-[#fff9f6] content-stretch flex items-center justify-between p-[20px] relative rounded-[12px] shrink-0 w-full" data-node-id="96:3088" data-name="product_box">
+                <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="96:3089" data-name="left">
+                  <div className="relative rounded-[6px] shrink-0 size-[80px]" data-node-id="96:3090" data-name="img_box">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]">
+                      <img alt="" className="absolute h-[150%] left-0 max-w-none top-[-32.1%] w-full" src={imgImgBox} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col h-[60px] items-start justify-between not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:3091" data-name="txt">
+                    <p className="font-['NanumSquareRound:Bold'] leading-none relative shrink-0 text-[#1b1716] text-[16px]" data-node-id="96:3092">
+                      백차
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px]" data-node-id="96:3093">
+                      카페인 낮음
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="96:3094">
+                      90℃ ‧ 3분
+                    </p>
+                  </div>
+                  <div className="content-stretch flex flex-col h-[60px] items-start justify-between relative shrink-0" data-node-id="96:3095" data-name="txt">
+                    <div className="content-stretch flex flex-col gap-[9px] items-start relative shrink-0 w-[92px]" data-node-id="96:3096" data-name="taste">
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3097" data-name="sweet">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3098">{`단맛 `}</p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3099" data-name="circle">
+                          <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3100" data-name="circle">
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3101">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse46} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3102">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse46} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3103">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse46} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3104">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse49} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3105">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse49} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3106" data-name="tannin">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3107">
+                          탄닌
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3108" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3109" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3110">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3111">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3112">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3113">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3114">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3115" data-name="body">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="96:3116">
+                          바디
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3117" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3118" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3119">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3120">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3121">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3122">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3123">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fff9f6] content-stretch flex items-center justify-between p-[20px] relative rounded-[12px] shrink-0 w-full" data-node-id="96:3160" data-name="product_box">
+                <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="96:3161" data-name="left">
+                  <div className="relative rounded-[6px] shrink-0 size-[80px]" data-node-id="96:3162" data-name="img_box">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]">
+                      <img alt="" className="absolute h-[150%] left-0 max-w-none top-[-40.03%] w-full" src={imgImgBox1} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col h-[60px] items-start justify-between not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:3163" data-name="txt">
+                    <p className="font-['NanumSquareRound:Bold'] leading-none relative shrink-0 text-[#1b1716] text-[16px]" data-node-id="96:3164">
+                      페퍼민트
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px]" data-node-id="96:3165">
+                      카페인 없음
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="96:3166">
+                      100℃ ‧ 4분
+                    </p>
+                  </div>
+                  <div className="content-stretch flex flex-col h-[60px] items-start justify-between relative shrink-0" data-node-id="96:3167" data-name="txt">
+                    <div className="content-stretch flex flex-col gap-[9px] items-start relative shrink-0 w-[92px]" data-node-id="96:3168" data-name="taste">
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3169" data-name="sweet">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3170">
+                          청량
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3171" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3172" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3173">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3174">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3175">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3176">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3177">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3178" data-name="tannin">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3179">
+                          탄닌
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3180" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3181" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3182">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3183">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3184">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3185">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3186">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3187" data-name="body">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="96:3188">
+                          바디
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3189" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3190" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3191">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3192">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3193">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3194">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3195">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fff9f6] content-stretch flex items-center justify-between p-[20px] relative rounded-[12px] shrink-0 w-full" data-node-id="96:3124" data-name="product_box">
+                <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="96:3125" data-name="left">
+                  <div className="relative rounded-[6px] shrink-0 size-[80px]" data-node-id="96:3126" data-name="img_box">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]">
+                      <img alt="" className="absolute h-[197.73%] left-0 max-w-none top-[-65.44%] w-[111.25%]" src={imgImgBox2} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col h-[60px] items-start justify-between not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:3127" data-name="txt">
+                    <p className="font-['NanumSquareRound:Bold'] leading-none relative shrink-0 text-[#1b1716] text-[16px]" data-node-id="96:3128">
+                      캐모마일
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px]" data-node-id="96:3129">
+                      카페인 없음
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="96:3130">
+                      95℃ ‧ 4분
+                    </p>
+                  </div>
+                  <div className="content-stretch flex flex-col h-[60px] items-start justify-between relative shrink-0" data-node-id="96:3131" data-name="txt">
+                    <div className="content-stretch flex flex-col gap-[9px] items-start relative shrink-0 w-[92px]" data-node-id="96:3132" data-name="taste">
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3133" data-name="sweet">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3134">{`단맛 `}</p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3135" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3136" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3137">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3138">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3139">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3140">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3141">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3142" data-name="tannin">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3143">
+                          탄닌
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3144" data-name="circle">
+                          <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3145" data-name="circle">
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3146">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse46} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3147">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse51} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3148">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse51} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3149">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse49} />
+                            </div>
+                            <div className="relative shrink-0 size-[10px]" data-node-id="96:3150">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse49} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3151" data-name="body">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="96:3152">
+                          바디
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="327:862">
+                          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="96:3153" data-name="circle">
+                            <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3154" data-name="circle">
+                              <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3155">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                              </div>
+                              <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3156">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                              </div>
+                              <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3157">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                              </div>
+                              <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3158">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                              </div>
+                              <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3159">
+                                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fff9f6] content-stretch flex items-center justify-between p-[20px] relative rounded-[12px] shrink-0 w-full" data-node-id="96:3196" data-name="product_box">
+                <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="96:3197" data-name="left">
+                  <div className="relative rounded-[6px] shrink-0 size-[80px]" data-node-id="96:3198" data-name="img_box">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]">
+                      <img alt="" className="absolute h-[157.5%] left-0 max-w-none top-[-45.31%] w-[105%]" src={imgImgBox3} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col h-[60px] items-start justify-between not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:3199" data-name="txt">
+                    <p className="font-['NanumSquareRound:Bold'] leading-none relative shrink-0 text-[#1b1716] text-[16px]" data-node-id="96:3200">
+                      루이보스
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px]" data-node-id="96:3201">
+                      카페인 낮음
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="96:3202">
+                      100℃ ‧ 5분
+                    </p>
+                  </div>
+                  <div className="content-stretch flex flex-col h-[60px] items-start justify-between relative shrink-0" data-node-id="96:3203" data-name="txt">
+                    <div className="content-stretch flex flex-col gap-[9px] items-start relative shrink-0 w-[92px]" data-node-id="96:3204" data-name="taste">
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3205" data-name="sweet">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3206">{`단맛 `}</p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3207" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3208" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3209">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3210">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3211">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3212">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3213">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3214" data-name="tannin">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3215">
+                          탄닌
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3216" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3217" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3218">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3219">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3220">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3221">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3222">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3223" data-name="body">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="96:3224">
+                          바디
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3225" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3226" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3227">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3228">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3229">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3230">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3231">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fff9f6] content-stretch flex items-center justify-between p-[20px] relative rounded-[12px] shrink-0 w-full" data-node-id="96:3268" data-name="product_box">
+                <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="96:3269" data-name="left">
+                  <div className="relative rounded-[6px] shrink-0 size-[80px]" data-node-id="96:3270" data-name="img_box">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]">
+                      <img alt="" className="absolute h-[133.08%] left-[0.34%] max-w-none top-[-8.19%] w-full" src={imgImgBox4} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col h-[60px] items-start justify-between not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:3271" data-name="txt">
+                    <p className="font-['NanumSquareRound:Bold'] leading-none relative shrink-0 text-[#1b1716] text-[16px]" data-node-id="96:3272">
+                      히비스커스
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px]" data-node-id="96:3273">
+                      카페인 없음
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="96:3274">
+                      100℃ ‧ 5분
+                    </p>
+                  </div>
+                  <div className="content-stretch flex flex-col h-[60px] items-start justify-between relative shrink-0" data-node-id="96:3275" data-name="txt">
+                    <div className="content-stretch flex flex-col gap-[9px] items-start relative shrink-0 w-[92px]" data-node-id="96:3276" data-name="taste">
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3277" data-name="sweet">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3278">
+                          산미
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3279" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3280" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3281">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3282">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3283">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3284">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3285">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3286" data-name="tannin">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3287">
+                          탄닌
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3288" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3289" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3290">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3291">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3292">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3293">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3294">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3295" data-name="body">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="96:3296">
+                          바디
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3297" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3298" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3299">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3300">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3301">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3302">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3303">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-[#fff9f6] content-stretch flex items-center justify-between p-[20px] relative rounded-[12px] shrink-0 w-full" data-node-id="96:3232" data-name="product_box">
+                <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="96:3233" data-name="left">
+                  <div className="relative rounded-[6px] shrink-0 size-[80px]" data-node-id="96:3234" data-name="img_box">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-[6px]">
+                      <img alt="" className="absolute h-[177.78%] left-0 max-w-none top-[-20.19%] w-full" src={imgImgBox5} />
+                    </div>
+                  </div>
+                  <div className="[word-break:break-word] content-stretch flex flex-col h-[60px] items-start justify-between not-italic relative shrink-0 whitespace-nowrap" data-node-id="96:3235" data-name="txt">
+                    <p className="font-['NanumSquareRound:Bold'] leading-none relative shrink-0 text-[#1b1716] text-[16px]" data-node-id="96:3236">
+                      보이차
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px]" data-node-id="96:3237">
+                      카페인 중간
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[1.2] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="96:3238">
+                      100℃ ‧ 3분
+                    </p>
+                  </div>
+                  <div className="content-stretch flex flex-col h-[60px] items-start justify-between relative shrink-0" data-node-id="96:3239" data-name="txt">
+                    <div className="content-stretch flex flex-col gap-[9px] items-start relative shrink-0 w-[92px]" data-node-id="96:3240" data-name="taste">
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3241" data-name="sweet">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3242">{`단맛 `}</p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3243" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3244" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3245">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3246">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3247">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3248">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3249">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3250" data-name="tannin">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] tracking-[-0.24px] whitespace-nowrap" data-node-id="96:3251">
+                          탄닌
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3252" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3253" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3254">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3255">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3256">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse48} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3257">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3258">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse50} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="content-stretch flex gap-[4px] items-center relative shrink-0 w-full" data-node-id="96:3259" data-name="body">
+                        <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[1.2] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="96:3260">
+                          바디
+                        </p>
+                        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[66px]" data-node-id="96:3261" data-name="circle">
+                          <div className="h-[10px] relative shrink-0 w-full" data-node-id="96:3262" data-name="circle">
+                            <div className="absolute left-0 size-[10px] top-0" data-node-id="96:3263">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[14px] size-[10px] top-0" data-node-id="96:3264">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[28px] size-[10px] top-0" data-node-id="96:3265">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[42px] size-[10px] top-0" data-node-id="96:3266">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                            <div className="absolute left-[56px] size-[10px] top-0" data-node-id="96:3267">
+                              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse47} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="111:3538" data-name="bottom_wrap">
+        <div className="bg-[#ffece3] content-stretch flex gap-[74px] items-center overflow-clip px-[28px] py-[10px] relative rounded-[25px] shadow-[0px_0px_6.7px_0px_rgba(77,70,68,0.06)] shrink-0" data-node-id="I111:3538;78:710" data-name="nav_bottom">
+          <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="I111:3538;289:603" data-name="Coffee">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCoffee} />
+          </div>
+          <HouseLine className="h-[36px] relative shrink-0 w-[50px]" />
+          <User className="h-[36px] relative shrink-0 w-[50px]" />
+        </div>
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="I111:3538;77:540" data-name="Mobile_Browser_bottom">
+          <div className="h-[34px] relative shrink-0 w-full" data-node-id="I111:3538;77:541" data-name="bottom">
+            <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="I111:3538;77:542" data-name="Home Indicator">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[#fff9f6] content-stretch flex flex-col items-start left-1/2 py-[10px] top-0 w-[402px]" data-node-id="111:4196" data-name="top_wrap">
+        <div className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-full" data-node-id="I111:4196;289:455" data-name="Status bar - iPhone">
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="I111:4196;289:456" data-name="Time">
+            <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="I111:4196;289:457" data-name="Frame">
+              <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="I111:4196;289:458" style={{ fontVariationSettings: '"wdth" 100' }}>
+                9:41
+              </p>
+            </div>
+          </div>
+          <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="I111:4196;289:459" data-name="Dynamic Island" />
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="I111:4196;289:460" data-name="Levels">
+            <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="I111:4196;289:461" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex h-[44px] items-center justify-between px-[20px] relative shrink-0 w-full" data-node-id="I111:4196;289:469" data-name="header">
+          <button className="content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" data-node-id="I111:4196;289:470" data-name="headerIcon">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I111:4196;289:470;14:772" data-name="CaretLeft">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCaretLeft} />
+            </div>
+          </button>
+          <div className="content-stretch flex items-center justify-center px-[10px] relative shrink-0" data-node-id="I111:4196;289:471" data-name="logo">
+            <p className="[word-break:break-word] font-['iceJaram:Regular'] leading-none not-italic relative shrink-0 text-[#1c1b1b] text-[32px] tracking-[0.32px] whitespace-nowrap" data-node-id="I111:4196;289:472">
+              T100
+            </p>
+          </div>
+          <HeaderIcon className="content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative shrink-0" />
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: color/black: #1C1B1B.
+Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

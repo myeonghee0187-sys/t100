@@ -1,0 +1,420 @@
+const imgLibraryOn = "/assets/icons/coffee-on.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgSettings = "/assets/icons/settings.svg";
+const imgChevronRight = "/assets/icons/chevron-right.svg";
+const imgCoffee = "/assets/icons/coffee-off.svg";
+const imgHouseLine = "/assets/icons/home-off.svg";
+const imgUser = "/assets/icons/user-on.svg";
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+
+type CoffeeProps = {
+  className?: string;
+  library?: boolean;
+};
+
+function Coffee({ className, library = true }: CoffeeProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="78:659">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLibraryOn} />
+    </div>
+  );
+}
+
+function TopWrap({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative w-[402px]"} data-node-id="77:460" data-name="top_wrap">
+      <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="77:443" data-name="Time">
+        <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="77:444" data-name="Frame">
+          <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="77:445" style={{ fontVariationSettings: '"wdth" 100' }}>
+            9:41
+          </p>
+        </div>
+      </div>
+      <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="77:446" data-name="Dynamic Island" />
+      <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="77:447" data-name="Levels">
+        <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="77:448" data-name="Frame">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function My() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex flex-col items-center relative size-full" data-node-id="224:431" data-name="my">
+      <TopWrap className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-[402px]" />
+      <div className="content-stretch flex flex-col h-[722px] items-center overflow-x-clip overflow-y-auto relative shrink-0 w-[402px]" data-node-id="224:433" data-name="Main">
+        <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip pb-[32px] pt-[16px] px-[24px] relative shrink-0 w-[402px]" data-node-id="355:480" data-name="my_content">
+          <div className="content-stretch flex h-[44px] items-center justify-between relative shrink-0 w-[354px]" data-node-id="357:641" data-name="page_header">
+            <p className="[word-break:break-word] font-['MaruBuri:SemiBold'] leading-[32px] not-italic relative shrink-0 text-[#1b1716] text-[24px] whitespace-nowrap" data-node-id="355:481">
+              마이페이지
+            </p>
+            <button className="content-stretch cursor-pointer flex gap-[4px] h-[44px] items-center justify-center relative shrink-0 w-[68px]" data-node-id="357:642" data-name="settings_shortcut">
+              <div className="relative shrink-0 size-[18px]" data-node-id="357:643" data-name="settings">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSettings} />
+              </div>
+              <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[18px] not-italic relative shrink-0 text-[#4d4644] text-[12px] text-left whitespace-nowrap" data-node-id="357:646">
+                설정
+              </p>
+            </button>
+          </div>
+          <div className="content-stretch flex flex-col items-start pt-[28px] relative shrink-0 w-[354px]" data-node-id="357:647" data-name="profile_wrap">
+            <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col gap-[20px] items-center pb-[20px] pt-[44px] px-[20px] relative rounded-[20px] shrink-0 w-[354px]" data-node-id="357:648" data-name="profile_card">
+              <div className="absolute bg-[#ffece3] border-5 border-[#fff9f6] border-solid content-stretch flex items-center justify-center left-[144px] rounded-[32px] size-[64px] top-[-29px]" data-node-id="357:649" data-name="profile_avatar">
+                <Coffee className="h-[36px] relative shrink-0 w-[50px]" />
+              </div>
+              <div className="absolute content-stretch flex h-[32px] items-center justify-center left-[253px] top-[7px] w-[84px]" data-node-id="357:652" data-name="edit_profile">
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:653">
+                  프로필 수정
+                </p>
+              </div>
+              <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-center not-italic relative shrink-0 w-[314px] whitespace-nowrap" data-node-id="357:654" data-name="profile_name">
+                <p className="font-['NanumSquareRound:Bold'] leading-[28px] relative shrink-0 text-[#1b1716] text-[20px]" data-node-id="357:655">
+                  지훈님
+                </p>
+                <p className="font-['NanumSquareRound:Regular'] leading-[20px] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="357:656">
+                  한 잔씩, 나만의 취향이 쌓여요.
+                </p>
+              </div>
+              <div className="content-stretch flex items-center justify-between relative shrink-0 w-[314px]" data-node-id="357:657" data-name="tea_summary">
+                <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-center not-italic relative shrink-0 w-[98px] whitespace-nowrap" data-node-id="357:658" data-name="summary / 우림 횟수">
+                  <p className="font-['NanumSquareRound:Regular'] leading-[16px] relative shrink-0 text-[#4d4644] text-[11px]" data-node-id="357:659">
+                    우림 횟수
+                  </p>
+                  <div className="content-stretch flex gap-[3px] items-baseline relative shrink-0" data-node-id="357:660" data-name="value">
+                    <p className="font-['NanumSquareRound:Bold'] leading-[32px] relative shrink-0 text-[#f0776c] text-[24px]" data-node-id="357:661">
+                      63
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[18px] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="357:662">
+                      잔
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-[32px] relative shrink-0 w-px" data-node-id="357:663" data-name="metric_separator" />
+                <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-center not-italic relative shrink-0 w-[98px] whitespace-nowrap" data-node-id="357:664" data-name="summary / 즐긴 차">
+                  <p className="font-['NanumSquareRound:Regular'] leading-[16px] relative shrink-0 text-[#4d4644] text-[11px]" data-node-id="357:665">
+                    즐긴 차
+                  </p>
+                  <div className="content-stretch flex gap-[3px] items-baseline relative shrink-0" data-node-id="357:666" data-name="value">
+                    <p className="font-['NanumSquareRound:Bold'] leading-[32px] relative shrink-0 text-[#1b1716] text-[24px]" data-node-id="357:667">
+                      6
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[18px] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="357:668">
+                      종
+                    </p>
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-[32px] relative shrink-0 w-px" data-node-id="357:669" data-name="metric_separator" />
+                <div className="[word-break:break-word] content-stretch flex flex-col gap-[4px] items-center not-italic relative shrink-0 w-[98px] whitespace-nowrap" data-node-id="357:670" data-name="summary / 내 권장값">
+                  <p className="font-['NanumSquareRound:Regular'] leading-[16px] relative shrink-0 text-[#4d4644] text-[11px]" data-node-id="357:671">
+                    내 권장값
+                  </p>
+                  <div className="content-stretch flex gap-[3px] items-baseline relative shrink-0" data-node-id="357:672" data-name="value">
+                    <p className="font-['NanumSquareRound:Bold'] leading-[32px] relative shrink-0 text-[#1b1716] text-[24px]" data-node-id="357:673">
+                      3
+                    </p>
+                    <p className="font-['NanumSquareRound:Regular'] leading-[18px] relative shrink-0 text-[#4d4644] text-[12px]" data-node-id="357:674">
+                      개
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-[354px]" data-node-id="357:675" data-name="preferred_tea">
+            <div className="content-stretch flex items-center justify-between relative shrink-0 w-[354px]" data-node-id="357:676" data-name="section_heading">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[28px] not-italic relative shrink-0 text-[#1b1716] text-[18px] whitespace-nowrap" data-node-id="357:677">
+                선호 차종
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-[354px]" data-node-id="357:679" data-name="preferred_tea_list">
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col gap-[4px] items-center p-[12px] relative rounded-[12px] shrink-0 w-[110px]" data-node-id="357:680" data-name="preferred / 녹차">
+                <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="357:681" data-name="tea_label">
+                  <div className="bg-[#b8c96a] relative rounded-[5px] shrink-0 size-[10px]" data-node-id="357:682" data-name="tea_color" />
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#1b1716] text-[13px] whitespace-nowrap" data-node-id="357:683">
+                    녹차
+                  </p>
+                </div>
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:684">
+                  24잔
+                </p>
+              </div>
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col gap-[4px] items-center p-[12px] relative rounded-[12px] shrink-0 w-[110px]" data-node-id="357:685" data-name="preferred / 캐모마일">
+                <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="357:686" data-name="tea_label">
+                  <div className="bg-[#e8c55a] relative rounded-[5px] shrink-0 size-[10px]" data-node-id="357:687" data-name="tea_color" />
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#1b1716] text-[13px] whitespace-nowrap" data-node-id="357:688">
+                    캐모마일
+                  </p>
+                </div>
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:689">
+                  17잔
+                </p>
+              </div>
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col gap-[4px] items-center p-[12px] relative rounded-[12px] shrink-0 w-[110px]" data-node-id="357:690" data-name="preferred / 보리차">
+                <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="357:691" data-name="tea_label">
+                  <div className="bg-[#8a5a35] relative rounded-[5px] shrink-0 size-[10px]" data-node-id="357:692" data-name="tea_color" />
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#1b1716] text-[13px] whitespace-nowrap" data-node-id="357:693">
+                    보리차
+                  </p>
+                </div>
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:694">
+                  12잔
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col items-start p-[20px] relative rounded-[20px] shrink-0 w-[354px]" data-node-id="357:695" data-name="personal_brewing_values">
+            <div className="content-stretch flex items-center justify-between relative shrink-0 w-[314px]" data-node-id="357:696" data-name="section_heading">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[28px] not-italic relative shrink-0 text-[#1b1716] text-[18px] whitespace-nowrap" data-node-id="357:697">
+                개인 권장값
+              </p>
+              <div className="bg-[#ffece3] content-stretch flex items-center px-[8px] py-[4px] relative rounded-[20px] shrink-0" data-node-id="357:698" data-name="3개 저장">
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:699">
+                  3개 저장
+                </p>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[20px] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="357:700">
+              내 입맛에 맞춰 저장한 우림 설정
+            </p>
+            <div className="content-stretch flex flex-col items-start pt-[12px] relative shrink-0 w-[314px]" data-node-id="357:701" data-name="saved_values_list">
+              <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:702" data-name="saved_value / 녹차">
+                <div className="bg-[#b8c96a] relative rounded-[4px] shrink-0 size-[8px]" data-node-id="357:703" data-name="tea_color" />
+                <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px not-italic relative whitespace-nowrap" data-node-id="357:704" data-name="tea_and_brew">
+                  <p className="font-['NanumSquareRound:Bold'] leading-[20px] relative shrink-0 text-[#1b1716] text-[14px]" data-node-id="357:705">
+                    녹차
+                  </p>
+                  <p className="font-['NanumSquareRound:Regular'] leading-[16px] relative shrink-0 text-[#4d4644] text-[11px]" data-node-id="357:706">
+                    정수기 온수 · 2분
+                  </p>
+                </div>
+                <div className="bg-[#ffece3] content-stretch flex items-center px-[8px] py-[4px] relative rounded-[20px] shrink-0" data-node-id="357:707" data-name="따뜻하게">
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:708">
+                    따뜻하게
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:709" data-name="divider" />
+              <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:710" data-name="saved_value / 캐모마일">
+                <div className="bg-[#e8c55a] relative rounded-[4px] shrink-0 size-[8px]" data-node-id="357:711" data-name="tea_color" />
+                <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px not-italic relative whitespace-nowrap" data-node-id="357:712" data-name="tea_and_brew">
+                  <p className="font-['NanumSquareRound:Bold'] leading-[20px] relative shrink-0 text-[#1b1716] text-[14px]" data-node-id="357:713">
+                    캐모마일
+                  </p>
+                  <p className="font-['NanumSquareRound:Regular'] leading-[16px] relative shrink-0 text-[#4d4644] text-[11px]" data-node-id="357:714">
+                    정수기 온수 · 3분 30초
+                  </p>
+                </div>
+                <div className="bg-[#ffece3] content-stretch flex items-center px-[8px] py-[4px] relative rounded-[20px] shrink-0" data-node-id="357:715" data-name="따뜻하게">
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:716">
+                    따뜻하게
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:717" data-name="divider" />
+              <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:718" data-name="saved_value / 페퍼민트">
+                <div className="bg-[#afcdbb] relative rounded-[4px] shrink-0 size-[8px]" data-node-id="357:719" data-name="tea_color" />
+                <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px not-italic relative whitespace-nowrap" data-node-id="357:720" data-name="tea_and_brew">
+                  <p className="font-['NanumSquareRound:Bold'] leading-[20px] relative shrink-0 text-[#1b1716] text-[14px]" data-node-id="357:721">
+                    페퍼민트
+                  </p>
+                  <p className="font-['NanumSquareRound:Regular'] leading-[16px] relative shrink-0 text-[#4d4644] text-[11px]" data-node-id="357:722">
+                    끓인 물 · 4분
+                  </p>
+                </div>
+                <div className="bg-[#eff5f1] content-stretch flex items-center px-[8px] py-[4px] relative rounded-[20px] shrink-0" data-node-id="357:723" data-name="시원하게">
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[16px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:724">
+                    시원하게
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[28px] items-start pt-[8px] relative shrink-0 w-[354px]" data-node-id="357:725" data-name="settings_and_support">
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[354px]" data-node-id="357:726" data-name="계정">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[22px] not-italic relative shrink-0 text-[#4d4644] text-[14px] whitespace-nowrap" data-node-id="357:727">
+                계정
+              </p>
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col items-start px-[20px] relative rounded-[16px] shrink-0 w-[354px]" data-node-id="357:728" data-name="계정 / menu">
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:729" data-name="menu / 계정 정보">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:730">
+                    계정 정보
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:731" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:733" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:734" data-name="menu / 비밀번호 변경">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:735">
+                    비밀번호 변경
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:736" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[354px]" data-node-id="357:738" data-name="앱 설정">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[22px] not-italic relative shrink-0 text-[#4d4644] text-[14px] whitespace-nowrap" data-node-id="357:739">
+                앱 설정
+              </p>
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col items-start px-[20px] relative rounded-[16px] shrink-0 w-[354px]" data-node-id="357:740" data-name="앱 설정 / menu">
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:741" data-name="menu / 알림 설정">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:742">
+                    알림 설정
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:743" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:745" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:746" data-name="menu / 자동 기록">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:747">
+                    자동 기록
+                  </p>
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[18px] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="357:748">
+                    사용 중
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:749" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:751" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:752" data-name="menu / 기본 음용 방식">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:753">
+                    기본 음용 방식
+                  </p>
+                  <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[18px] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="357:754">
+                    따뜻하게
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:755" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:757" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:758" data-name="menu / 기록 관리">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:759">
+                    기록 관리
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:760" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[354px]" data-node-id="357:762" data-name="고객지원">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[22px] not-italic relative shrink-0 text-[#4d4644] text-[14px] whitespace-nowrap" data-node-id="357:763">
+                고객지원
+              </p>
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col items-start px-[20px] relative rounded-[16px] shrink-0 w-[354px]" data-node-id="357:764" data-name="고객지원 / menu">
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:765" data-name="menu / 공지사항">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:766">
+                    공지사항
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:767" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:769" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:770" data-name="menu / 자주 묻는 질문">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:771">
+                    자주 묻는 질문
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:772" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:774" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:775" data-name="menu / 문의하기">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:776">
+                    문의하기
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:777" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[354px]" data-node-id="357:779" data-name="서비스 정보">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[22px] not-italic relative shrink-0 text-[#4d4644] text-[14px] whitespace-nowrap" data-node-id="357:780">
+                서비스 정보
+              </p>
+              <div className="bg-[#fffcfb] border border-[rgba(138,90,53,0.09)] border-solid content-stretch flex flex-col items-start px-[20px] relative rounded-[16px] shrink-0 w-[354px]" data-node-id="357:781" data-name="서비스 정보 / menu">
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:782" data-name="menu / 이용약관">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:783">
+                    이용약관
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:784" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:786" data-name="divider" />
+                <div className="content-stretch flex gap-[12px] h-[52px] items-center relative shrink-0 w-[314px]" data-node-id="357:787" data-name="menu / 개인정보 처리방침">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['NanumSquareRound:Regular'] leading-[20px] min-w-px not-italic relative text-[#1b1716] text-[14px]" data-node-id="357:788">
+                    개인정보 처리방침
+                  </p>
+                  <div className="relative shrink-0 size-[16px]" data-node-id="357:789" data-name="chevron_right">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChevronRight} />
+                  </div>
+                </div>
+                <div className="bg-[rgba(77,70,68,0.1)] h-px relative shrink-0 w-[314px]" data-node-id="357:791" data-name="divider" />
+                <div className="[word-break:break-word] content-stretch flex font-['NanumSquareRound:Regular'] gap-[12px] h-[52px] items-center not-italic relative shrink-0 w-[314px]" data-node-id="357:792" data-name="menu / 앱 버전">
+                  <p className="flex-[1_0_0] leading-[20px] min-w-px relative text-[#1b1716] text-[14px]" data-node-id="357:793">
+                    앱 버전
+                  </p>
+                  <p className="leading-[18px] relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="357:794">
+                    1.0.0
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[354px]" data-node-id="357:795" data-name="account_actions">
+              <div className="content-stretch flex gap-[20px] items-center relative shrink-0" data-node-id="357:796" data-name="logout_and_delete">
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[24px] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="357:797">
+                  로그아웃
+                </p>
+                <div className="bg-[rgba(77,70,68,0.2)] h-[12px] relative shrink-0 w-px" data-node-id="357:798" data-name="divider" />
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[24px] not-italic relative shrink-0 text-[#4d4644] text-[12px] whitespace-nowrap" data-node-id="357:799">
+                  회원 탈퇴
+                </p>
+              </div>
+              <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[18px] not-italic relative shrink-0 text-[#4d4644] text-[11px] whitespace-nowrap" data-node-id="357:800">
+                T100 · Tea for Travel
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col items-center relative shrink-0" data-node-id="224:434" data-name="bottom_wrap">
+        <div className="bg-[#ffece3] content-stretch flex gap-[74px] items-center overflow-clip px-[28px] py-[10px] relative rounded-[25px] shadow-[0px_0px_6.7px_0px_rgba(77,70,68,0.06)] shrink-0" data-node-id="I224:434;78:710" data-name="nav_bottom">
+          <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="I224:434;289:603" data-name="Coffee">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCoffee} />
+          </div>
+          <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="I224:434;289:616" data-name="HouseLine">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHouseLine} />
+          </div>
+          <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="I224:434;289:629" data-name="User">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUser} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="I224:434;77:540" data-name="Mobile_Browser_bottom">
+          <div className="h-[34px] relative shrink-0 w-full" data-node-id="I224:434;77:541" data-name="bottom">
+            <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="I224:434;77:542" data-name="Home Indicator">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.

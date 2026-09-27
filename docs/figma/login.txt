@@ -1,0 +1,156 @@
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgLogoKakao = "/assets/icons/kakao.svg";
+const imgIcon = "/assets/icons/google.svg";
+const imgLogoApple = "/assets/icons/apple.svg";
+
+type BottomWrapProps = {
+  className?: string;
+  prop1?: "off";
+};
+
+function BottomWrap({ className, prop1 = "off" }: BottomWrapProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start relative"} data-node-id="78:719">
+      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="77:457" data-name="Mobile_Browser_bottom">
+        <div className="h-[34px] relative shrink-0 w-full" data-node-id="77:458" data-name="bottom">
+          <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="77:459" data-name="Home Indicator">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TopWrap({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative w-[402px]"} data-node-id="77:460" data-name="top_wrap">
+      <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="77:443" data-name="Time">
+        <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="77:444" data-name="Frame">
+          <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="77:445" style={{ fontVariationSettings: '"wdth" 100' }}>
+            9:41
+          </p>
+        </div>
+      </div>
+      <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="77:446" data-name="Dynamic Island" />
+      <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="77:447" data-name="Levels">
+        <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="77:448" data-name="Frame">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Login() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex flex-col items-center relative size-full" data-node-id="350:464" data-name="login">
+      <TopWrap className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-[402px]" />
+      <div className="content-stretch flex flex-col h-[778px] items-center pt-[60px] relative shrink-0 w-[402px]" data-node-id="350:466" data-name="Main">
+        <div className="content-stretch flex flex-col gap-[24px] items-center relative shrink-0 w-[354px]" data-node-id="364:819" data-name="login_content">
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] h-[104px] items-center justify-center not-italic relative shrink-0 w-[354px] whitespace-nowrap" data-node-id="364:820" data-name="brand_welcome">
+            <p className="font-['iceJaram:Regular'] leading-[64px] relative shrink-0 text-[#f0776c] text-[56px]" data-node-id="364:821">
+              T100
+            </p>
+            <p className="font-['NanumSquareRound:Regular'] leading-[20px] relative shrink-0 text-[#5a4139] text-[14px]" data-node-id="364:822">
+              나의 차 시간을 이어가세요.
+            </p>
+          </div>
+          <div className="content-stretch flex flex-col gap-[20px] items-center relative shrink-0 w-[354px]" data-node-id="364:823" data-name="login_form">
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="364:824" data-name="field / 이메일">
+              <div className="content-stretch flex h-[20px] items-center justify-between relative shrink-0 w-full" data-node-id="I364:824;14:727" data-name="label">
+                <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#5a4139] text-[14px] whitespace-nowrap" data-node-id="I364:824;14:727;14:724">
+                  이메일
+                </p>
+              </div>
+              <button className="bg-[#fffcfb] border border-[#e6dad5] border-solid content-stretch cursor-pointer flex h-[48px] items-center overflow-clip px-[16px] relative rounded-[12px] shrink-0 w-full" data-node-id="I364:824;14:728" data-name="input">
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[20px] not-italic relative shrink-0 text-[#8b7771] text-[14px] text-left whitespace-nowrap" data-node-id="I364:824;14:728;14:720">
+                  example@email.com
+                </p>
+              </button>
+            </div>
+            <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="364:830" data-name="field / 비밀번호">
+              <div className="[word-break:break-word] content-stretch flex h-[20px] items-center justify-between not-italic relative shrink-0 w-full whitespace-nowrap" data-node-id="I364:830;14:727" data-name="label">
+                <p className="font-['NanumSquareRound:Bold'] leading-[20px] relative shrink-0 text-[#5a4139] text-[14px]" data-node-id="I364:830;14:727;14:724">
+                  비밀번호
+                </p>
+                <p className="[text-underline-position:from-font] decoration-from-font decoration-solid font-['NanumSquareRound:Regular'] leading-[18px] relative shrink-0 text-[#a34b43] text-[12px] underline" data-node-id="I364:830;14:727;14:725">
+                  비밀번호 찾기
+                </p>
+              </div>
+              <button className="bg-[#fffcfb] border border-[#e6dad5] border-solid content-stretch cursor-pointer flex h-[48px] items-center overflow-clip px-[16px] relative rounded-[12px] shrink-0 w-full" data-node-id="I364:830;14:728" data-name="input">
+                <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[20px] not-italic relative shrink-0 text-[#8b7771] text-[14px] text-left whitespace-nowrap" data-node-id="I364:830;14:728;14:720">
+                  비밀번호를 입력해 주세요
+                </p>
+              </button>
+            </div>
+            <div className="bg-[#f0776c] content-stretch flex flex-col h-[50px] items-center justify-center overflow-clip px-[24px] py-[16px] relative rounded-[100px] shrink-0 w-full" data-node-id="364:836" data-name="primary_action / 로그인">
+              <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-none not-italic relative shrink-0 text-[#1b1716] text-[16px] whitespace-nowrap" data-node-id="I364:836;96:1862">
+                로그인
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[20px] items-center relative shrink-0 w-[354px]" data-node-id="364:838" data-name="social_login">
+            <div className="content-stretch flex gap-[12px] h-[18px] items-center relative shrink-0 w-[354px]" data-node-id="364:839" data-name="divider">
+              <div className="bg-[#e6dad5] flex-[1_0_0] h-px min-w-px relative" data-node-id="364:840" data-name="rule" />
+              <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[18px] not-italic relative shrink-0 text-[#8b7771] text-[12px] whitespace-nowrap" data-node-id="364:841">
+                또는 간편하게 시작하기
+              </p>
+              <div className="bg-[#e6dad5] flex-[1_0_0] h-px min-w-px relative" data-node-id="364:842" data-name="rule" />
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-center relative shrink-0 w-[354px]" data-node-id="364:843" data-name="providers">
+              <div className="bg-[#fee500] content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[16px] relative rounded-[12px] shrink-0 w-[354px]" data-node-id="364:844" data-name="social_login / Kakao">
+                <div className="relative shrink-0 size-[24px]" data-node-id="364:845" data-name="logo / Kakao">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoKakao} />
+                </div>
+                <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#1b1716] text-[14px] whitespace-nowrap" data-node-id="364:848">
+                  카카오로 계속하기
+                </p>
+              </div>
+              <div className="bg-white border border-[#e6dad5] border-solid content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[16px] relative rounded-[12px] shrink-0 w-[354px]" data-node-id="364:849" data-name="social_login / Google">
+                <div className="relative shrink-0 size-[24px]" data-node-id="364:850" data-name="logo / Google">
+                  <div className="absolute left-[2.4px] size-[19.2px] top-[2.4px]" data-node-id="364:851" data-name="icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                  </div>
+                </div>
+                <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#1b1716] text-[14px] whitespace-nowrap" data-node-id="364:856">
+                  Google로 계속하기
+                </p>
+              </div>
+              <div className="bg-[#1b1716] content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[16px] relative rounded-[12px] shrink-0 w-[354px]" data-node-id="364:857" data-name="social_login / Apple">
+                <div className="relative shrink-0 size-[24px]" data-node-id="364:858" data-name="logo / Apple">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLogoApple} />
+                </div>
+                <p className="[word-break:break-word] font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-white whitespace-nowrap" data-node-id="364:861">
+                  Apple로 계속하기
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="h-[24px] relative shrink-0 w-[354px]" data-node-id="364:862" data-name="space/24" />
+        <div className="content-stretch flex gap-[8px] h-[44px] items-center justify-center relative shrink-0 w-[354px]" data-node-id="364:863" data-name="account_switch">
+          <p className="[word-break:break-word] font-['NanumSquareRound:Regular'] leading-[20px] not-italic relative shrink-0 text-[#4d4644] text-[14px] whitespace-nowrap" data-node-id="364:864">
+            T100이 처음이신가요?
+          </p>
+          <a className="content-stretch cursor-pointer flex h-[44px] items-center justify-center relative shrink-0 w-[62px]" data-node-id="364:865" data-name="link / 회원가입">
+            <p className="[text-underline-position:from-font] [word-break:break-word] decoration-from-font decoration-solid font-['NanumSquareRound:Bold'] leading-[20px] not-italic relative shrink-0 text-[#a34b43] text-[14px] text-left underline whitespace-nowrap" data-node-id="364:866">
+              회원가입
+            </p>
+          </a>
+        </div>
+      </div>
+      <BottomWrap className="content-stretch flex flex-col h-[34px] items-start relative shrink-0" />
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: glass1: Effect(type: GLASS, radius: 68).

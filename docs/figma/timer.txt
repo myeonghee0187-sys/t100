@@ -1,0 +1,131 @@
+const imgUserOff = "/assets/icons/user-off.svg";
+const imgHomeOn = "/assets/icons/home-on.svg";
+const imgCoffee = "/assets/icons/coffee-off.svg";
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+const imgBell = "/assets/icons/bell.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgCaretLeft = "/assets/icons/back.svg";
+
+type UserProps = {
+  className?: string;
+  user?: "off";
+};
+
+function User({ className, user = "off" }: UserProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="160:1135">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUserOff} />
+    </div>
+  );
+}
+
+type HouseLineProps = {
+  className?: string;
+  home?: "on";
+};
+
+function HouseLine({ className, home = "on" }: HouseLineProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="77:637">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeOn} />
+    </div>
+  );
+}
+
+type BottomWrapProps = {
+  className?: string;
+  prop1?: "on";
+};
+
+function BottomWrap({ className, prop1 = "on" }: BottomWrapProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-center relative"} data-node-id="78:718">
+      <div className="bg-[#ffece3] content-stretch flex gap-[74px] items-center overflow-clip px-[28px] py-[10px] relative rounded-[25px] shadow-[0px_0px_6.7px_0px_rgba(77,70,68,0.06)] shrink-0" data-node-id="78:710" data-name="nav_bottom">
+        <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="289:603" data-name="Coffee">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCoffee} />
+        </div>
+        <HouseLine className="h-[36px] relative shrink-0 w-[50px]" />
+        <User className="h-[36px] relative shrink-0 w-[50px]" />
+      </div>
+      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="77:540" data-name="Mobile_Browser_bottom">
+        <div className="h-[34px] relative shrink-0 w-full" data-node-id="77:541" data-name="bottom">
+          <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="77:542" data-name="Home Indicator">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type HeaderIconProps = {
+  className?: string;
+  prop1?: "bellOn2";
+};
+
+function HeaderIcon({ className, prop1 = "bellOn2" }: HeaderIconProps) {
+  return (
+    <div className={className || "content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative"} data-node-id="96:1944">
+      <div className="relative shrink-0 size-[24px]" data-node-id="96:1945" data-name="Bell">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBell} />
+      </div>
+    </div>
+  );
+}
+
+export default function Timer() {
+  return (
+    <div className="bg-gradient-to-b content-stretch flex flex-col from-[#fff9f6] items-center relative size-full to-[#f0776c]" data-node-id="139:1090" data-annotations="시간 종료에 가까워질수록 화면 가득하게 차오름" data-name="timer">
+      <div className="content-stretch flex flex-col items-start py-[10px] relative shrink-0 w-[402px]" data-node-id="139:1091" data-name="top_wrap">
+        <div className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-full" data-node-id="I139:1091;289:455" data-name="Status bar - iPhone">
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="I139:1091;289:456" data-name="Time">
+            <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="I139:1091;289:457" data-name="Frame">
+              <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="I139:1091;289:458" style={{ fontVariationSettings: '"wdth" 100' }}>
+                9:41
+              </p>
+            </div>
+          </div>
+          <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="I139:1091;289:459" data-name="Dynamic Island" />
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="I139:1091;289:460" data-name="Levels">
+            <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="I139:1091;289:461" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex h-[44px] items-center justify-between px-[20px] relative shrink-0 w-full" data-node-id="I139:1091;289:469" data-name="header">
+          <button className="content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" data-node-id="I139:1091;289:470" data-name="headerIcon">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I139:1091;289:470;14:772" data-name="CaretLeft">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCaretLeft} />
+            </div>
+          </button>
+          <div className="content-stretch flex items-center justify-center px-[10px] relative shrink-0" data-node-id="I139:1091;289:471" data-name="logo">
+            <p className="[word-break:break-word] font-['iceJaram:Regular'] leading-none not-italic relative shrink-0 text-[#1c1b1b] text-[32px] tracking-[0.32px] whitespace-nowrap" data-node-id="I139:1091;289:472">
+              T100
+            </p>
+          </div>
+          <HeaderIcon className="content-stretch flex h-[44px] items-center overflow-clip p-[10px] relative shrink-0" />
+        </div>
+      </div>
+      <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[12px] items-center min-h-px not-italic overflow-clip px-[110px] py-[265px] relative w-full whitespace-nowrap" data-node-id="139:1092" data-name="Main">
+        <div className="font-['NanumSquareRound:Regular'] leading-[0] relative shrink-0 text-[#28140e] text-[24px] text-center" data-node-id="154:254">
+          <p className="leading-[1.2] mb-0">시원한 캐모마일이</p>
+          <p className="leading-[1.2]">우려지고 있어요</p>
+        </div>
+        <p className="font-['NanumSquareRound:Bold'] leading-[1.2] relative shrink-0 text-[#1b1716] text-[48px]" data-node-id="154:253">
+          3 : 00
+        </p>
+      </div>
+      <BottomWrap className="content-stretch flex flex-col items-center relative shrink-0" />
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: color/black: #1C1B1B.
+Some elements have annotation data attributes. They provide extra information about how the element should be implemented.IMPORTANT: Do not ignore these annotation attributes. They should not appear in your final code.

@@ -1,0 +1,207 @@
+const imgPlus = "/assets/icons/plus.svg";
+const imgUserOff = "/assets/icons/user-off.svg";
+const imgHomeOn = "/assets/icons/home-on.svg";
+const imgMint = "/assets/images/gradient-mint.svg";
+const imgBrown = "/assets/images/gradient-brown.svg";
+const imgPink = "/assets/images/gradient-pink.svg";
+const imgGreen = "/assets/images/gradient-green.svg";
+const imgYellow = "/assets/images/gradient-yellow.svg";
+const imgBlue = "/assets/images/gradient-blue.svg";
+const imgLine3 = "/assets/icons/library-axis.svg";
+const imgCoffee = "/assets/icons/coffee-off.svg";
+const imgHomeIndicator = "/assets/icons/home-indicator.svg";
+const imgFrame = "/assets/icons/status-levels.svg";
+const imgCaretLeft = "/assets/icons/back.svg";
+
+type HeaderIconProps = {
+  className?: string;
+  prop1?: "plus";
+};
+
+function HeaderIcon({ className, prop1 = "plus" }: HeaderIconProps) {
+  return (
+    <button className={className || "content-stretch cursor-pointer flex items-center justify-center relative size-[44px]"} data-node-id="160:1019">
+      <div className="relative shrink-0 size-[24px]" data-node-id="160:1022" data-name="Plus">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgPlus} />
+      </div>
+    </button>
+  );
+}
+
+type UserProps = {
+  className?: string;
+  user?: "off";
+};
+
+function User({ className, user = "off" }: UserProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="160:1135">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUserOff} />
+    </div>
+  );
+}
+
+type HouseLineProps = {
+  className?: string;
+  home?: "on";
+};
+
+function HouseLine({ className, home = "on" }: HouseLineProps) {
+  return (
+    <div className={className || "h-[36px] relative w-[50px]"} data-node-id="77:637">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeOn} />
+    </div>
+  );
+}
+
+export default function Library() {
+  return (
+    <div className="bg-[#fff9f6] content-stretch flex items-start relative size-full" data-node-id="203:499" data-name="library">
+      <div className="content-stretch flex h-[128px] items-end relative shrink-0 w-[402px]" data-node-id="203:500" data-name="Main">
+        <div className="absolute h-[405.814px] left-[-15px] top-[377px] w-[243.843px]" data-node-id="203:501" data-name="mint">
+          <div className="absolute inset-[-17.74%_-29.12%]">
+            <img alt="" className="block max-w-none size-full" src={imgMint} />
+          </div>
+        </div>
+        <div className="absolute h-[485.668px] left-[221px] top-[169px] w-[258.506px]" data-node-id="203:503" data-name="brown">
+          <div className="absolute inset-[-16.88%_-31.72%]">
+            <img alt="" className="block max-w-none size-full" src={imgBrown} />
+          </div>
+        </div>
+        <div className="absolute h-[243.176px] left-[213px] top-[-22px] w-[184.311px]" data-node-id="203:505" data-name="pink">
+          <div className="absolute inset-[-26.32%_-34.72%]">
+            <img alt="" className="block max-w-none size-full" src={imgPink} />
+          </div>
+        </div>
+        <div className="absolute h-[504.339px] left-[-15.04px] top-[-38.05px] w-[291.02px]" data-node-id="203:507" data-name="green">
+          <div className="absolute inset-[-19.83%_-34.36%]">
+            <img alt="" className="block max-w-none size-full" src={imgGreen} />
+          </div>
+        </div>
+        <div className="absolute h-[510.997px] left-[117px] top-[562px] w-[286.881px]" data-node-id="203:509" data-name="yellow">
+          <div className="absolute inset-[-17.61%_-31.37%]">
+            <img alt="" className="block max-w-none size-full" src={imgYellow} />
+          </div>
+        </div>
+        <div className="absolute h-[298.599px] left-[-15px] top-[729px] w-[252.418px]" data-node-id="203:511" data-name="blue">
+          <div className="absolute inset-[-18.75%_-22.19%]">
+            <img alt="" className="block max-w-none size-full" src={imgBlue} />
+          </div>
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-start leading-[1.2] left-[62px] not-italic top-[836px] whitespace-nowrap" data-node-id="203:529" data-name="txt">
+          <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[#28140e] text-[20px]" data-node-id="203:530">
+            버터플라이피
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#4d4644] text-[16px]" data-node-id="203:531">
+            1잔 · 6.22
+          </p>
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-start leading-[1.2] left-[90px] not-italic top-[288px] whitespace-nowrap" data-node-id="203:514" data-name="txt">
+          <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[#28140e] text-[20px]" data-node-id="203:515">
+            녹차
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#4d4644] text-[16px]" data-node-id="203:516">
+            24잔 · 8.24
+          </p>
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-start leading-[1.2] left-[232px] not-italic top-[151px] whitespace-nowrap" data-node-id="203:517" data-name="txt">
+          <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[#28140e] text-[20px]" data-node-id="203:518">
+            히비스커스
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#4d4644] text-[16px]" data-node-id="203:519">
+            3잔 · 7.27
+          </p>
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-start leading-[1.2] left-[232px] not-italic top-[425px] whitespace-nowrap" data-node-id="203:520" data-name="txt">
+          <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[#28140e] text-[20px]" data-node-id="203:521">
+            보리차
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#4d4644] text-[16px]" data-node-id="203:522">
+            12잔 · 7.27
+          </p>
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-start leading-[1.2] left-[99px] not-italic top-[562px] whitespace-nowrap" data-node-id="203:523" data-name="txt">
+          <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[#28140e] text-[20px]" data-node-id="203:524">
+            페퍼민트
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#4d4644] text-[16px]" data-node-id="203:525">
+            6잔 · 8.14
+          </p>
+        </div>
+        <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-start leading-[1.2] left-[232px] not-italic top-[699px] whitespace-nowrap" data-node-id="203:526" data-name="txt">
+          <p className="font-['NanumSquareRound:Bold'] relative shrink-0 text-[#28140e] text-[20px]" data-node-id="203:527">
+            캐모마일
+          </p>
+          <p className="font-['NanumSquareRound:Regular'] relative shrink-0 text-[#4d4644] text-[16px]" data-node-id="203:528">
+            17잔 · 8.21
+          </p>
+        </div>
+        <div className="-translate-x-1/2 absolute flex h-[723px] items-center justify-center left-1/2 top-[151px] w-0" data-node-id="203:513">
+          <div className="flex-none rotate-90">
+            <div className="h-0 relative w-[723px]">
+              <div className="absolute inset-[-1px_-0.14%]">
+                <img alt="" className="block max-w-none size-full" src={imgLine3} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute backdrop-blur-[4.15px] bg-gradient-to-t bottom-0 content-stretch flex from-[#fff9f6] h-[128px] items-start left-1/2 p-[10px] to-[rgba(153,153,153,0)] w-[402px]" data-node-id="323:664" data-name="blur" />
+      <div className="-translate-x-1/2 absolute bottom-[-1px] content-stretch flex flex-col items-center left-1/2" data-node-id="204:572" data-name="bottom_wrap">
+        <div className="bg-[#ffece3] content-stretch flex gap-[74px] items-center overflow-clip px-[28px] py-[10px] relative rounded-[25px] shadow-[0px_0px_6.7px_0px_rgba(77,70,68,0.06)] shrink-0" data-node-id="I204:572;78:710" data-name="nav_bottom">
+          <div className="h-[36px] relative shrink-0 w-[50px]" data-node-id="I204:572;289:603" data-name="Coffee">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCoffee} />
+          </div>
+          <HouseLine className="h-[36px] relative shrink-0 w-[50px]" />
+          <User className="h-[36px] relative shrink-0 w-[50px]" />
+        </div>
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[402px]" data-node-id="I204:572;77:540" data-name="Mobile_Browser_bottom">
+          <div className="h-[34px] relative shrink-0 w-full" data-node-id="I204:572;77:541" data-name="bottom">
+            <div className="-translate-x-1/2 absolute bottom-[8px] h-[5px] left-1/2 w-[134px]" data-node-id="I204:572;77:542" data-name="Home Indicator">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgHomeIndicator} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute content-stretch flex flex-col items-start left-1/2 py-[10px] top-0 w-[402px]" data-node-id="203:533" data-name="top_wrap">
+        <div className="content-stretch flex h-[62px] items-center justify-center pt-[2.333px] px-[9px] relative shrink-0 w-full" data-node-id="I203:533;78:1113" data-name="Status bar - iPhone">
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-[6px] relative" data-node-id="I203:533;78:1114" data-name="Time">
+            <div className="content-stretch flex items-center justify-center relative shrink-0" data-node-id="I203:533;78:1115" data-name="Frame">
+              <p className="[word-break:break-word] font-['SF_Pro:Semibold'] font-[590] leading-[22px] relative shrink-0 text-[17px] text-[color:var(--labels\/primary,black)] text-center whitespace-nowrap" data-node-id="I203:533;78:1116" style={{ fontVariationSettings: '"wdth" 100' }}>
+                9:41
+              </p>
+            </div>
+          </div>
+          <div className="bg-black h-[37px] relative rounded-[100px] shrink-0 w-[125px]" data-node-id="I203:533;78:1117" data-name="Dynamic Island" />
+          <div className="content-stretch flex flex-[1_0_0] h-[13px] items-center justify-center min-w-px pr-px relative" data-node-id="I203:533;78:1118" data-name="Levels">
+            <div className="h-[13px] relative shrink-0 w-[85.329px]" data-node-id="I203:533;78:1119" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex h-[44px] items-center justify-between px-[20px] relative shrink-0 w-full" data-node-id="I203:533;78:1127" data-name="header">
+          <button className="content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" data-node-id="I203:533;78:1128" data-name="headerIcon">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I203:533;78:1128;14:772" data-name="CaretLeft">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgCaretLeft} />
+            </div>
+          </button>
+          <div className="content-stretch flex items-center justify-center px-[10px] relative shrink-0" data-node-id="I203:533;78:1129" data-name="logo">
+            <p className="[word-break:break-word] font-['iceJaram:Regular'] leading-none not-italic relative shrink-0 text-[#1c1b1b] text-[32px] tracking-[0.32px] whitespace-nowrap" data-node-id="I203:533;78:1130">
+              T100
+            </p>
+          </div>
+          <HeaderIcon className="content-stretch cursor-pointer flex items-center justify-center relative shrink-0 size-[44px]" />
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: color/black: #1C1B1B.

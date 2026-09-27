@@ -1,0 +1,254 @@
+[
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgBell",
+    "file": "public/assets/icons/bell.svg",
+    "bytes": 2027
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgUserOff",
+    "file": "public/assets/icons/user-off.svg",
+    "bytes": 1074
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgHomeOn",
+    "file": "public/assets/icons/home-on.svg",
+    "bytes": 1344
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgCoffee",
+    "file": "public/assets/icons/coffee-off.svg",
+    "bytes": 2489
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgHomeIndicator",
+    "file": "public/assets/icons/home-indicator.svg",
+    "bytes": 348
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgFrame",
+    "file": "public/assets/icons/status-levels.svg",
+    "bytes": 5833
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgCaretLeft",
+    "file": "public/assets/icons/back.svg",
+    "bytes": 971
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgRecommend01",
+    "file": "public/assets/images/recommend-green.png",
+    "bytes": 940068
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgRecommend02",
+    "file": "public/assets/images/recommend-black.png",
+    "bytes": 122797
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgRecommend03",
+    "file": "public/assets/images/recommend-oolong.png",
+    "bytes": 2270186
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgImgBox",
+    "file": "public/assets/images/white-tea.png",
+    "bytes": 724078
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgImgBox1",
+    "file": "public/assets/images/peppermint.png",
+    "bytes": 120217
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgImgBox2",
+    "file": "public/assets/images/chamomile.png",
+    "bytes": 231005
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgImgBox3",
+    "file": "public/assets/images/rooibos.png",
+    "bytes": 84149
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgImgBox4",
+    "file": "public/assets/images/hibiscus.png",
+    "bytes": 156808
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgImgBox5",
+    "file": "public/assets/images/puer.png",
+    "bytes": 102883
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgEllipse46",
+    "file": "public/assets/icons/taste-46.svg",
+    "bytes": 234
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgEllipse47",
+    "file": "public/assets/icons/taste-47.svg",
+    "bytes": 234
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgEllipse48",
+    "file": "public/assets/icons/taste-48.svg",
+    "bytes": 234
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgEllipse49",
+    "file": "public/assets/icons/taste-49.svg",
+    "bytes": 234
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgEllipse50",
+    "file": "public/assets/icons/taste-50.svg",
+    "bytes": 234
+  },
+  {
+    "sourceScreen": "home",
+    "figmaReference": "imgEllipse51",
+    "file": "public/assets/icons/taste-51.svg",
+    "bytes": 234
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgPlus",
+    "file": "public/assets/icons/plus.svg",
+    "bytes": 1030
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgMint",
+    "file": "public/assets/images/gradient-mint.svg",
+    "bytes": 890
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgBrown",
+    "file": "public/assets/images/gradient-brown.svg",
+    "bytes": 876
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgPink",
+    "file": "public/assets/images/gradient-pink.svg",
+    "bytes": 920
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgGreen",
+    "file": "public/assets/images/gradient-green.svg",
+    "bytes": 911
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgYellow",
+    "file": "public/assets/images/gradient-yellow.svg",
+    "bytes": 866
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgBlue",
+    "file": "public/assets/images/gradient-blue.svg",
+    "bytes": 920
+  },
+  {
+    "sourceScreen": "library",
+    "figmaReference": "imgLine3",
+    "file": "public/assets/icons/library-axis.svg",
+    "bytes": 285
+  },
+  {
+    "sourceScreen": "profile",
+    "figmaReference": "imgLibraryOn",
+    "file": "public/assets/icons/coffee-on.svg",
+    "bytes": 2489
+  },
+  {
+    "sourceScreen": "profile",
+    "figmaReference": "imgSettings",
+    "file": "public/assets/icons/settings.svg",
+    "bytes": 868
+  },
+  {
+    "sourceScreen": "profile",
+    "figmaReference": "imgChevronRight",
+    "file": "public/assets/icons/chevron-right.svg",
+    "bytes": 320
+  },
+  {
+    "sourceScreen": "profile",
+    "figmaReference": "imgHouseLine",
+    "file": "public/assets/icons/home-off.svg",
+    "bytes": 1344
+  },
+  {
+    "sourceScreen": "profile",
+    "figmaReference": "imgUser",
+    "file": "public/assets/icons/user-on.svg",
+    "bytes": 1074
+  },
+  {
+    "sourceScreen": "login",
+    "figmaReference": "imgLogoKakao",
+    "file": "public/assets/icons/kakao.svg",
+    "bytes": 2258
+  },
+  {
+    "sourceScreen": "login",
+    "figmaReference": "imgIcon",
+    "file": "public/assets/icons/google.svg",
+    "bytes": 1359
+  },
+  {
+    "sourceScreen": "login",
+    "figmaReference": "imgLogoApple",
+    "file": "public/assets/icons/apple.svg",
+    "bytes": 1072
+  },
+  {
+    "sourceScreen": "success",
+    "figmaReference": "imgCamomileIce",
+    "file": "public/assets/images/chamomile-ice.png",
+    "bytes": 329102
+  },
+  {
+    "sourceScreen": "detail",
+    "figmaReference": "imgImage18",
+    "file": "public/assets/images/chamomile-flower.png",
+    "bytes": 252358
+  },
+  {
+    "sourceScreen": "header",
+    "figmaReference": "logo",
+    "file": "public/assets/icons/logo.svg",
+    "bytes": 9839
+  },
+  {
+    "sourceScreen": "login",
+    "figmaReference": "logo-coral",
+    "file": "public/assets/icons/logo-coral.svg",
+    "bytes": 9330
+  }
+]

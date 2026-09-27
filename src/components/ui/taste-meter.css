@@ -1,0 +1,32 @@
+.taste-meter {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+  width: 92px;
+  color: var(--color-text-secondary, #4d4644);
+  font-family: var(--font-body, "NanumSquareRound", sans-serif);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.24px;
+}
+
+.taste-meter-label {
+  flex: 0 0 22px;
+  white-space: nowrap;
+}
+
+.taste-meter-circles {
+  display: flex;
+  flex: 0 0 66px;
+  align-items: center;
+  gap: 4px;
+}
+
+.taste-meter-circle {
+  display: block;
+  flex: 0 0 10px;
+  width: 10px;
+  height: 10px;
+}

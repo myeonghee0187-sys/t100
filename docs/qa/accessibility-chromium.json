@@ -1,0 +1,96 @@
+[
+  {
+    "path": "/login",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".auth-brand-word"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #f0776c, background color: #fff9f6, font size: 42.0pt (56px), font weight: normal). Expected contrast ratio of 3:1"
+          },
+          {
+            "target": [
+              ".auth-divider"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.04 (foreground color: #8b7771, background color: #fff9f6, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/join",
+    "violations": []
+  },
+  {
+    "path": "/home",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".is-active > .recommend-tags > span:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #fff9f6, background color: #f0776c, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".is-active > .recommend-tags > span:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #fff9f6, background color: #f0776c, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".recommend-oolong-tea > .recommend-tags > span:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #fff9f6, background color: #f0776c, font size: 11.3pt (15.04px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".recommend-oolong-tea > .recommend-tags > span:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.66 (foreground color: #fff9f6, background color: #f0776c, font size: 11.3pt (15.04px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/brew/chamomile",
+    "violations": []
+  },
+  {
+    "path": "/library",
+    "violations": []
+  },
+  {
+    "path": "/library?tea=chamomile",
+    "violations": []
+  },
+  {
+    "path": "/profile",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".coral"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.72 (foreground color: #f0776c, background color: #fffcfb, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+          }
+        ]
+      }
+    ]
+  }
+]
